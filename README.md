@@ -6,9 +6,19 @@ This Kicad project implements a C64 cartridge with an EEPROM socket and some ext
 
 This PCB is directly derived from the [OpenC64Cart](https://github.com/SukkoPera/OpenC64Cart) by SukkoPera, so all the credit for him for most of the footprints used.
 
-## Manufacturing
+## Manufacturing the PCB
 
-The gerbers attached can be directly used to get the PCB manufactured for you. It is important for the health of the C64 to ask for bevelled edges with Immersion (ENIG) or Hard Gold contacts. These extra features will cost you some extra cash, but will save you issues with your machines in the long run.
+This is a pretty straightforward 2-layer PCB with few components. The gerbers attached can be directly used to get the PCB manufactured for you. It is important for the health of the C64 to ask for bevelled edges with Immersion (ENIG) or Hard Gold contacts. These extra features will cost you some extra cash, but will save you issues with your machines in the long run.
+
+## Soldering Components
+
+The PCB has been designed to use SMD capacitors. I went for 0805s as this size is pretty manageable and allows for using 0603s (which is my main inventory) without issue. The capacitors are located below the sockets for the ICs, so remember to solder them first :)
+
+## Firmware
+
+This project does not include any particular firmware. Depending on your target use, you may find this page about [replicating the Super Zaxxon cart](https://www.hackup.net/2018/10/super-zaxxon-replica/) useful. You can of course code your own C64 applications. In any case, a good EEPROM programmer and a batch of 27512 memories will come extra handy. Remember to buy the eletrically erasable parts, they are dirt cheap and really convenient. 
+
+Note: I will not be responding any issues or questions regarding firmware/software to be used with this cart. 
 
 ## BOM
 
