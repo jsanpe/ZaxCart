@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/jsanpedro/sandbox/KiRename/ZaxxonCart/ZaxCart.sch</source>
+    <date>2021 August 25, Wednesday 17:41:23</date>
+    <tool>Eeschema (5.1.10-1-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Super Zaxxon Clone Cart</title>
+        <company>jsanpe</company>
+        <rev>1</rev>
+        <date>2021-08-25</date>
+        <source>ZaxCart.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>C64-Exp-Port</value>
+      <footprint>OpenC64Cart:C64-Cart</footprint>
+      <datasheet>https://www.c64-wiki.com/wiki/Expansion_Port</datasheet>
+      <libsource lib="C64-Exp-Port" part="C64-Exp-Port" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59713F4B</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597140F9</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>27512</value>
+      <footprint>Package_DIP:DIP-28_W15.24mm_Socket</footprint>
+      <libsource lib="ZaxCart-rescue" part="27512-OpenC64Cart-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59726871</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>74LS74</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>74xx/74hc_hct74.pdf</datasheet>
+      <libsource lib="74xx" part="74LS74" description="Dual D Flip-flop, Set &amp; Reset"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60519F44</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>74LS00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74ls00</datasheet>
+      <libsource lib="74xx" part="74LS00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6051E6DE</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60536851</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60537D45</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS00">
+      <aliases>
+        <alias>74LS37</alias>
+        <alias>7400</alias>
+        <alias>74HCT00</alias>
+        <alias>74HC00</alias>
+      </aliases>
+      <description>quad 2-input NAND gate</description>
+      <docs>http://www.ti.com/lit/gpn/sn74ls00</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS74">
+      <aliases>
+        <alias>74HC74</alias>
+      </aliases>
+      <description>Dual D Flip-flop, Set &amp; Reset</description>
+      <docs>74xx/74hc_hct74.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS74</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~R" type="input"/>
+        <pin num="2" name="D" type="input"/>
+        <pin num="3" name="C" type="input"/>
+        <pin num="4" name="~S" type="input"/>
+        <pin num="5" name="Q" type="output"/>
+        <pin num="6" name="~Q" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~Q" type="output"/>
+        <pin num="9" name="Q" type="output"/>
+        <pin num="10" name="~S" type="input"/>
+        <pin num="11" name="C" type="input"/>
+        <pin num="12" name="D" type="input"/>
+        <pin num="13" name="~R" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="C64-Exp-Port" part="C64-Exp-Port">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C64-Exp-Port</field>
+        <field name="Footprint">MODULE</field>
+        <field name="Datasheet">DOCUMENTATION</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="+5V" type="power_in"/>
+        <pin num="3" name="+5V" type="power_in"/>
+        <pin num="4" name="/IRQ" type="passive"/>
+        <pin num="5" name="R-/W" type="passive"/>
+        <pin num="6" name="DOT_Clk" type="passive"/>
+        <pin num="7" name="/I/O1" type="passive"/>
+        <pin num="8" name="/GAME" type="passive"/>
+        <pin num="9" name="/EXROM" type="passive"/>
+        <pin num="10" name="/I/O2" type="passive"/>
+        <pin num="11" name="/ROML" type="passive"/>
+        <pin num="12" name="BA" type="passive"/>
+        <pin num="13" name="/DMA" type="passive"/>
+        <pin num="14" name="D7" type="passive"/>
+        <pin num="15" name="D6" type="passive"/>
+        <pin num="16" name="D5" type="passive"/>
+        <pin num="17" name="D4" type="passive"/>
+        <pin num="18" name="D3" type="passive"/>
+        <pin num="19" name="D2" type="passive"/>
+        <pin num="20" name="D1" type="passive"/>
+        <pin num="21" name="D0" type="passive"/>
+        <pin num="22" name="GND" type="power_in"/>
+        <pin num="A" name="GND" type="power_in"/>
+        <pin num="B" name="/ROMH" type="passive"/>
+        <pin num="C" name="/RESET" type="passive"/>
+        <pin num="D" name="/NMI" type="passive"/>
+        <pin num="E" name="PHI2" type="passive"/>
+        <pin num="F" name="A15" type="passive"/>
+        <pin num="H" name="A14" type="passive"/>
+        <pin num="J" name="A13" type="passive"/>
+        <pin num="K" name="A12" type="passive"/>
+        <pin num="L" name="A11" type="passive"/>
+        <pin num="M" name="A10" type="passive"/>
+        <pin num="N" name="A9" type="passive"/>
+        <pin num="P" name="A8" type="passive"/>
+        <pin num="R" name="A7" type="passive"/>
+        <pin num="S" name="A6" type="passive"/>
+        <pin num="T" name="A5" type="passive"/>
+        <pin num="U" name="A4" type="passive"/>
+        <pin num="V" name="A3" type="passive"/>
+        <pin num="W" name="A2" type="passive"/>
+        <pin num="X" name="A1" type="passive"/>
+        <pin num="Y" name="A0" type="passive"/>
+        <pin num="Z" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ZaxCart-rescue" part="27512-OpenC64Cart-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">27512-OpenC64Cart-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A15" type="input"/>
+        <pin num="2" name="A12" type="input"/>
+        <pin num="3" name="A7" type="input"/>
+        <pin num="4" name="A6" type="input"/>
+        <pin num="5" name="A5" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="A2" type="input"/>
+        <pin num="9" name="A1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="D0" type="3state"/>
+        <pin num="12" name="D1" type="3state"/>
+        <pin num="13" name="D2" type="3state"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="D3" type="3state"/>
+        <pin num="16" name="D4" type="3state"/>
+        <pin num="17" name="D5" type="3state"/>
+        <pin num="18" name="D6" type="3state"/>
+        <pin num="19" name="D7" type="3state"/>
+        <pin num="20" name="CE" type="input"/>
+        <pin num="21" name="A10" type="input"/>
+        <pin num="22" name="OE" type="input"/>
+        <pin num="23" name="A11" type="input"/>
+        <pin num="24" name="A9" type="input"/>
+        <pin num="25" name="A8" type="input"/>
+        <pin num="26" name="A13" type="input"/>
+        <pin num="27" name="A14" type="input"/>
+        <pin num="28" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>/Library/Application Support/kicad/library/74xx.lib</uri>
+    </library>
+    <library logical="C64-Exp-Port">
+      <uri>/Users/jsanpedro/sandbox/KiRename/ZaxxonCart/lib/C64-Exp-Port.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="ZaxCart-rescue">
+      <uri>/Users/jsanpedro/sandbox/KiRename/ZaxxonCart/ZaxCart-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="5" name="Net-(U1-PadB)">
+      <node ref="U1" pin="B"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="6" name="Net-(U1-PadC)">
+      <node ref="U1" pin="C"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="7" name="Net-(U1-PadD)">
+      <node ref="U1" pin="D"/>
+    </net>
+    <net code="8" name="Net-(U1-PadE)">
+      <node ref="U1" pin="E"/>
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="9" name="Net-(U1-PadF)">
+      <node ref="U1" pin="F"/>
+    </net>
+    <net code="10" name="Net-(U1-PadH)">
+      <node ref="U1" pin="H"/>
+    </net>
+    <net code="11" name="Net-(U1-PadJ)">
+      <node ref="U1" pin="J"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="15" name="GND">
+      <node ref="C1" pin="1"/>
+      <node ref="U2" pin="14"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U1" pin="A"/>
+      <node ref="U1" pin="Z"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="22"/>
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="16" name="+5V">
+      <node ref="U3" pin="14"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="28"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="17" name="Net-(U2-Pad20)">
+      <node ref="U2" pin="20"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad11)">
+      <node ref="U4" pin="2"/>
+      <node ref="U2" pin="26"/>
+      <node ref="U4" pin="10"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad27)">
+      <node ref="U3" pin="5"/>
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="20" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="21" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="22" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+      <node ref="U4" pin="11"/>
+    </net>
+    <net code="23" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="24" name="/A0">
+      <node ref="U2" pin="10"/>
+      <node ref="U1" pin="Y"/>
+    </net>
+    <net code="25" name="/A1">
+      <node ref="U1" pin="X"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="26" name="/A2">
+      <node ref="U1" pin="W"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="27" name="/A3">
+      <node ref="U1" pin="V"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="28" name="/A4">
+      <node ref="U1" pin="U"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="29" name="/A5">
+      <node ref="U1" pin="T"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="30" name="/A6">
+      <node ref="U1" pin="S"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="31" name="/A7">
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="R"/>
+    </net>
+    <net code="32" name="/A8">
+      <node ref="U2" pin="25"/>
+      <node ref="U1" pin="P"/>
+    </net>
+    <net code="33" name="/A9">
+      <node ref="U2" pin="24"/>
+      <node ref="U1" pin="N"/>
+    </net>
+    <net code="34" name="/A10">
+      <node ref="U2" pin="21"/>
+      <node ref="U1" pin="M"/>
+    </net>
+    <net code="35" name="/A11">
+      <node ref="U1" pin="L"/>
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="36" name="/A12">
+      <node ref="U1" pin="K"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="37" name="/D7">
+      <node ref="U2" pin="19"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="38" name="/D6">
+      <node ref="U2" pin="18"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="39" name="/D5">
+      <node ref="U1" pin="16"/>
+      <node ref="U2" pin="17"/>
+    </net>
+    <net code="40" name="/D4">
+      <node ref="U1" pin="17"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="41" name="/D3">
+      <node ref="U1" pin="18"/>
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="42" name="/D2">
+      <node ref="U1" pin="19"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="43" name="/D1">
+      <node ref="U2" pin="12"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="44" name="/D0">
+      <node ref="U1" pin="21"/>
+      <node ref="U2" pin="11"/>
+    </net>
+  </nets>
+</export>
